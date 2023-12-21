@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <div class="background">
+      <div class="calc">
+
+        <p id="result"></p>
+
+        <div class="calc-buttons">
+          <table>
+            <tr>
+              <td><button class="calc-button">C</button></td>
+              <td><button class="calc-button"><</button></td>
+              <td><button class="calc-button">&divide;</button></td>
+              <td><button class="calc-button">X</button></td>
+            </tr>
+            <tr>
+                <td><button class="calc-button">7</button></td>
+                <td><button class="calc-button">8</button></td>
+                <td><button class="calc-button">9</button></td>
+                <td><button class="calc-button">&minus;</button></td>
+            </tr>
+            <tr>
+                <td><button class="calc-button">4</button></td>
+                <td><button class="calc-button">5</button></td>
+                <td><button class="calc-button">6</button></td>
+                <td><button class="calc-button">&plus;</button></td>
+            </tr>
+            <tr>
+                <td><button class="calc-button">1</button></td>
+                <td><button class="calc-button">2</button></td>
+                <td><button class="calc-button">3</button></td>
+                <td rowspan="2"><button class="calc-button">&equals;</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="calc-button">0</button></td>
+                <td><button class="calc-button">.</button></td>
+            </tr>
+
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </body>
 </html>

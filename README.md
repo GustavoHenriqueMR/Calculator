@@ -1,1 +1,1 @@
-Personal project of a calculator to study JavaScript.
+### Personal project of a calculator to study JavaScript.

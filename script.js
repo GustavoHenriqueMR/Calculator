@@ -31,4 +31,5 @@ function calc() {
     var evalResult = eval(fullExpression);
     var limitResult = evalResult.toString().substring(0, 13);
     document.getElementById('result').innerHTML = limitResult;
+    fullExpression = limitResult;
 }

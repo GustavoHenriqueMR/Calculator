@@ -10,37 +10,37 @@
   <body>
     <div class="background">
       <div class="calc">
-        <p id="result">3131</p>
+        <p id="result"></p>
 
         <div class="calc-buttons">
           <table>
             <tr>
-              <td><button class="calc-button">C</button></td>
-              <td><button class="calc-button"><</button></td>
-              <td><button class="calc-button">&divide;</button></td>
-              <td><button class="calc-button">x</button></td>
+              <td><button class="calc-button" onclick="clean()">C</button></td>
+              <td><button class="calc-button" onclick="back()"><</button></td>
+              <td><button class="calc-button" onclick="insert('/')">&divide;</button></td>
+              <td><button class="calc-button" onclick="insert('*')">x</button></td>
             </tr>
             <tr>
               <td><button class="calc-button" onclick="insert('7')">7</button></td>
               <td><button class="calc-button" onclick="insert('8')">8</button></td>
               <td><button class="calc-button" onclick="insert('9')">9</button></td>
-              <td><button class="calc-button">&minus;</button></td>
+              <td><button class="calc-button" onclick="insert('-')">&minus;</button></td>
             </tr>
             <tr>
               <td><button class="calc-button" onclick="insert('4')">4</button></td>
               <td><button class="calc-button" onclick="insert('5')">5</button></td>
               <td><button class="calc-button" onclick="insert('6')">6</button></td>
-              <td><button class="calc-button">&plus;</button></td>
+              <td><button class="calc-button"onclick="insert('+')">&plus;</button></td>
             </tr>
             <tr>
               <td><button class="calc-button" onclick="insert('1')">1</button></td>
               <td><button class="calc-button" onclick="insert('2')">2</button></td>
               <td><button class="calc-button" onclick="insert('3')">3</button></td>
-              <td rowspan="2"><button class="calc-button" id="equals">&equals;</button></td>
+              <td rowspan="2"><button class="calc-button" id="equals" onclick="calc()">&equals;</button></td>
             </tr>
             <tr>
-              <td colspan="2"><button class="calc-button" id="zero">0</button></td>
-              <td><button class="calc-button">.</button></td>
+              <td colspan="2"><button class="calc-button" id="zero" onclick="insert('0')">0</button></td>
+              <td><button class="calc-button" onclick="insert('.')">.</button></td>
             </tr>
           </table>
         </div>

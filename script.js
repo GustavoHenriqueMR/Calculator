@@ -12,6 +12,18 @@ function insert(num) {
         return;
     }
 
+    // Checks if the new character is a decimal point and if the next one is an operator, to avoid: ./ .+ .* .-
+    if (result.endsWith('.')) {
+        if (/[\+\-\*\/]/.test(num)) {
+            return;
+        }
+    }
+
+    // Checks whether the new character is a point and whether the last number already contains a point, to avoid two point in one number
+    if (num === '.' && /\.\d*$/.test(result)) {
+        return;
+    }
+
     fullExpression = fullExpression + num;
     var limitVisorResult = fullExpression.substring(Math.max(fullExpression.length - 11, 0));
     document.getElementById('result').innerHTML = limitVisorResult;

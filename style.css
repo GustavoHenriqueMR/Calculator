@@ -40,40 +40,14 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.calc-button-zero {
-  background-color: white;
-  border: none;
+#zero {
   width: 104px;
   height: 50px;
-  font-size: 20px;
-  cursor: pointer;
-  color: #232323;
-  margin: 1px;
-  border: 1px solid rgba(0, 0, 0, 0.07);
-  border-radius: 15px;
 }
 
-.calc-button-zero:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.calc-button-equals {
-  background-color: white;
-  border: none;
+#equals {
   width: 50px;
   height: 104px;
-  font-size: 20px;
-  cursor: pointer;
-  color: #232323;
-  margin: 1px;
-  border: 1px solid rgba(0, 0, 0, 0.07);
-  border-radius: 15px;
-}
-
-.calc-button-equals:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #result{
